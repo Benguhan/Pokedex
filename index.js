@@ -86,7 +86,7 @@ const handleSearch = debounce(() => {
     const pokeNames = document.querySelectorAll(".poke-name");
 
     pokeNames.forEach(element => {
-        const parentElement = element.parentElement;
+        const parentElement = element.parentElement.parentElement;
         const pokemonName = element.innerHTML.toLowerCase();
         parentElement.style.display = pokemonName.includes(search) ? "flex" : "none";
     });
