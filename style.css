@@ -13,10 +13,12 @@ body {
 }
 
 .background {
-    width: 100%;
+    width: auto;
+
     min-height: 100vh;
     height: auto;
     background-color: rgba(0, 0, 0,0.5);
+    margin: 0px;
 }
 
 .header {
@@ -184,7 +186,7 @@ h1 {
 
 @media only screen and (max-width: 767px) {
     .background{
-        width: 100%; /* Adjust to take full width */
+        width: auto; /* Adjust to take full width */
     }
     .header{
         width: 100%; /* Adjust to take full width */
@@ -202,7 +204,7 @@ h1 {
         width: 100%; /* Adjust to take full width */
     }
     .poke-img{
-        width: 80px; /* Reduce image size */
-        height: 80px; /* Reduce image size */
+        width: 150px; /* Reduce image size */
+        height: 150px; /* Reduce image size */
     }
 }
