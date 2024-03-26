@@ -93,7 +93,6 @@ h1 {
 
 .cardBox {
     display: flex;
-
     width: 600px;
     height: auto;
     background-color: rgba(0, 0, 0, 0.601);
@@ -181,4 +180,29 @@ h1 {
     justify-content: center;
     gap: 10px;
     margin: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .background{
+        width: 100%; /* Adjust to take full width */
+    }
+    .header{
+        width: 100%; /* Adjust to take full width */
+    }
+    .search-container{
+        width: 100%; /* Adjust to take full width */
+    }
+    .search-container input{
+        width: 100%; /* Adjust to take full width */
+    }
+    .content{
+        width: 100%; /* Adjust to take full width */
+    }
+    .cardBox{
+        width: 100%; /* Adjust to take full width */
+    }
+    .poke-img{
+        width: 80px; /* Reduce image size */
+        height: 80px; /* Reduce image size */
+    }
 }
