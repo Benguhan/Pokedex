@@ -10,15 +10,21 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    width: 100%;
 }
 
 .background {
-    width: auto;
-
+    width: 100%;
     min-height: 100vh;
     height: auto;
     background-color: rgba(0, 0, 0,0.5);
     margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .header {
@@ -84,6 +90,7 @@ h1 {
 
 .content{
     width: auto;
+    max-width: fit-content;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -184,27 +191,36 @@ h1 {
     margin: 20px;
 }
 
-@media only screen and (max-width: 767px) {
-    .background{
-        width: auto; /* Adjust to take full width */
+@media only screen and (max-width: 768px) {
+    .background {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
     }
-    .header{
-        width: 100%; /* Adjust to take full width */
+    .content {
+        width: 100%;
+        flex-direction: column; /* Change to column layout */
     }
-    .search-container{
-        width: 100%; /* Adjust to take full width */
+    .cardBox {
+        width: 100%; /* Take full width */
+        margin-bottom: 20px; /* Add spacing between cards */
+        width: calc(100% - 20px); /* Adjust for margins */
     }
-    .search-container input{
-        width: 100%; /* Adjust to take full width */
+    .poke-img {
+        width: 150px; /* Adjust image size as needed */
+        height: 150px; /* Adjust image size as needed */
     }
-    .content{
-        width: 100%; /* Adjust to take full width */
+    .search-container {
+        width: 50%;
     }
-    .cardBox{
-        width: 100%; /* Adjust to take full width */
-    }
-    .poke-img{
-        width: 150px; /* Reduce image size */
-        height: 150px; /* Reduce image size */
+    .search-container input {
+        width: 50%; /* Adjust input width as needed */
     }
 }
